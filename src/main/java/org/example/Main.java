@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        BankDB db = new BankDB();
+        Bankdatabase db = new Bankdatabase();
         Scanner sc = new Scanner(System.in);
         while (true) {
             System.out.println("\n--- BANK MENU ---");
@@ -54,7 +54,7 @@ public class Main {
                     return;
                 }
 
-                default -> System.out.println("Invalid option.");
+                default : System.out.println("Invalid option.");
             }
         }
     }
