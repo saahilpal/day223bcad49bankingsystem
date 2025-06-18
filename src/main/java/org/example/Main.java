@@ -25,6 +25,7 @@ public class Main {
                     System.out.print("Enter Name: ");
                     String name = sc.nextLine();
                     db.createAccount(id, name);
+                    break;
                 }
                 case 2 :
                 {
@@ -33,6 +34,7 @@ public class Main {
                     System.out.print("Enter Amount: ");
                     double amt = sc.nextDouble();
                     db.deposit(id, amt);
+                    break;
                 }
                 case 3 :
                 {
@@ -41,12 +43,14 @@ public class Main {
                     System.out.print("Enter Amount: ");
                     double amt = sc.nextDouble();
                     db.withdraw(id, amt);
+                    break;
                 }
                 case 4 :
                 {
                     System.out.print("Enter Account ID: ");
                     String id = sc.nextLine();
                     db.checkBalance(id);
+                    break;
                 }
                 case 5 :
                 {
